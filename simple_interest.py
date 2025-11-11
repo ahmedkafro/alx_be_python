@@ -9,6 +9,6 @@ R = float(rate )
 T = int(time )
 
 I = P * R * T
-print("interest" , I)
+print("The simple interest is:" , I)
 
 
