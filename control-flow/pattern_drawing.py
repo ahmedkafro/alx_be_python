@@ -1,9 +1,16 @@
-user_prompt = input("Enter the size of the pattern:")
+user_prompt = int(input("Enter the size of the pattern: "))
 
-n = pattern_size
+n = 0
 
-while n <= user_prompt :
-  continue :
+while n < user_prompt:
+    for i in range(user_prompt):
+        print("*", end="")
+    print()   # move to next line
+    n += 1
 
-print ("*" , end = "n" )
+
+
+
+  
+
 
