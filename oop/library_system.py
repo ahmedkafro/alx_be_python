@@ -1,24 +1,32 @@
 class Book:
+    """Base class for all books."""
+
     def __init__(self, title, author):
         self.title = title
         self.author = author
 
 
 class EBook(Book):
+    """Derived class representing an electronic book."""
+
     def __init__(self, title, author, file_size):
         super().__init__(title, author)
         self.file_size = file_size
 
 
 class PrintBook(Book):
+    """Derived class representing a printed book."""
+
     def __init__(self, title, author, page_count):
         super().__init__(title, author)
         self.page_count = page_count
 
 
 class Library:
+    """Library class showing composition by containing books."""
+
     def __init__(self):
-        self.books = []  # composition: library *contains* books
+        self.books = []
 
     def add_book(self, book):
         self.books.append(book)
